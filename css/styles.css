@@ -598,15 +598,15 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../images/about-target.svg'); /* Replace with your image path */
+    background-image: url('/images/about-target.svg'); /* Replace with your image path */
 }
 
 .waiting-list li:nth-child(2)::before {
-    background-image: url('../images/about-chart.svg'); /* Replace with your image path */
+    background-image: url('/images/about-chart.svg'); /* Replace with your image path */
 }
 
 .waiting-list li:nth-child(3)::before {
-    background-image: url('../images/about-rocket.svg'); /* Replace with your image path */
+    background-image: url('/images/about-rocket.svg'); /* Replace with your image path */
 }
 
 
