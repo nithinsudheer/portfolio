@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I help early-stage founders go from concept to working MVPs in weeks using no-code and low-code platforms that already power real businesses.">
+    <meta name="keywords" content="MVP development, no-code, low-code, startup, rapid prototyping, product development">
+    <meta name="author" content="Nithin">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nithin - From Idea to Traction in Weeks">
+    <meta property="og:description" content="Launch your MVP in weeks, not months. Built on proven platforms that already power real businesses.">
+    <meta property="og:image" content="/images/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nithin - From Idea to Traction in Weeks">
+    <meta name="twitter:description" content="Launch your MVP in weeks, not months.">
+    
+    <title>Nithin - From Idea to Traction in Weeks</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    
+    <!-- Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inline script to prevent flash of wrong theme -->
+    <script>
+        // Set theme immediately before page renders
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero" id="navLogo">[nithin]</a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#method" class="nav-link">Method</a>
+                <a href="#proof" class="nav-link">Proof</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">☾</span>
+                </button>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="navLinkedIn">
+                    <span>in</span>
+                </a>
+                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter" id="navTwitter">
+                    <span>✕</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span class="hamburger">☰</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <!-- LEFT SIDE: Content -->
+            <div class="hero-content">
+                <h1 class="hero-headline">
+                    <span class="headline-line-1">From Idea to Traction</span>
+                    <span class="headline-line-2">
+                        <span id="typewriterText" class="typewriter-text"></span>
+                    </span>
+                </h1>
+                
+                <p class="hero-subheadline">
+                    Founders don't pitch ideas anymore. They show live products that customers already use.
+                </p>
+                
+                <div class="hero-copy">
+                    <!-- <p>I help early-stage founders go from concept to working MVPs in weeks using no-code and low-code platforms that already power real businesses.</p>
+                    <p>While traditional teams are still planning, you'll be gathering real-world feedback and traction.</p> -->
+                    <p><strong>Launch earlier, learn faster, and grow smarter.</strong></p>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Start Building Traction →</a>
+                    <a href="#timeline" class="btn btn-secondary">See How the Timeline Works →</a>
+                </div>
+            </div>
+            
+            <!-- RIGHT SIDE: Rocket Image (NEW!) -->
+            <div class="hero-image">
+                <img src="images/rocket.png" alt="Rocket launching - fast MVP development">
+            </div>
+        </div>
+    </section>
+
+    <!-- COST OF WAITING -->
+    <section id="about" class="cost-of-waiting">
+        <div class="container">
+            <div class="section-card">
+                <div class="section-label">⏳ A reality check before you scroll further</div>
+                <h2 class="section-title">The Cost of Waiting</h2>
+                
+                <div class="waiting-content">
+                    <p class="fade-in-item">Every week brings a new window to learn.</p>
+                    
+                    <ul class="waiting-list">
+                        <li class="fade-in-item">Every day spent planning is a day you could be learning from real users.</li>
+                        <li class="fade-in-item">Markets shift fast, and testing early keeps you ahead.</li>
+                        <li class="fade-in-item">A small launch now beats a perfect plan six months later.</li>
+                    </ul>
+                    
+                    <div class="bottom-line fade-in-item">
+                        <p><strong>The best time to launch was yesterday.</strong></p>
+                        <p><strong>The second-best time is this week.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE COMPARISON -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-label">📊 Side-by-side comparison</div>
+            <h2 class="section-title">The Timeline Reality</h2>
+            
+            <div class="timeline-comparison">
+                <div class="timeline-header">
+                    <div class="timeline-col">
+                        <h3>THE TRADITIONAL PATH</h3>
+                    </div>
+                    <div class="timeline-col">
+                        <h3>THE MODERN PATH</h3>
+                    </div>
+                </div>
+                
+                <div class="timeline-row fade-in-item">
+                    <div class="timeline-col traditional">
+                        <div class="timeline-period">MONTH 1</div>
+                        <p>Your team writes a 30-page PRD</p>
+                        <p>Every screen is designed in Figma</p>
+                        <p>You're shopping for agencies</p>
+                        <div class="timeline-status">Status: Planning phase</div>
+                    </div>
+                    <div class="timeline-col modern">
+                        <div class="timeline-period">WEEK 1</div>
+                        <p>You hop on a call to align on goals</p>
+                        <p>We sketch 3 core user flows</p>
+                        <p>A working prototype goes live</p>
+                        <div class="timeline-status">Status: Already testing</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-row fade-in-item">
+                    <div class="timeline-col traditional">
+                        <div class="timeline-period">MONTH 2</div>
+                        <p>Agencies send proposals and quotes</p>
+                        <p>You compare timelines and pricing</p>
+                        <p>Contract negotiations drag on</p>
+                        <div class="timeline-status">Status: Still no product</div>
+                    </div>
+                    <div class="timeline-col modern">
+                        <div class="timeline-period">WEEK 2</div>
+                        <p>5 beta users are testing the app</p>
+                        <p>You're watching real interactions</p>
+                        <p>We're iterating based on feedback</p>
+                        <div class="timeline-status">Status: Learning from real users</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-row fade-in-item">
+                    <div class="timeline-col traditional">
+                        <div class="timeline-period">MONTH 3</div>
+                        <p>Contract signed, kickoff meeting set</p>
+                        <p>Dev team is getting up to speed</p>
+                        <p>Project management tools configured</p>
+                        <div class="timeline-status">Status: Development about to start</div>
+                    </div>
+                    <div class="timeline-col modern">
+                        <div class="timeline-period">WEEK 3</div>
+                        <p>Payment system is integrated</p>
+                        <p>Analytics are tracking everything</p>
+                        <p>10 test users are actively engaged</p>
+                        <div class="timeline-status">Status: Product is functional</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-row fade-in-item">
+                    <div class="timeline-col traditional">
+                        <div class="timeline-period">MONTH 4</div>
+                        <p>First sprint delivers some features</p>
+                        <p>Internal QA catches bugs</p>
+                        <p>You're still waiting to show anyone</p>
+                        <div class="timeline-status">Status: In development</div>
+                    </div>
+                    <div class="timeline-col modern">
+                        <div class="timeline-period">WEEK 4</div>
+                        <p>Your MVP launches publicly</p>
+                        <p>Real users sign up organically</p>
+                        <p>You're tracking actual behavior</p>
+                        <div class="timeline-status">Status: Live and learning</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-row fade-in-item">
+                    <div class="timeline-col traditional">
+                        <div class="timeline-period">MONTH 5</div>
+                        <p>Feedback loops are finally starting</p>
+                        <p>Design revisions push timeline back</p>
+                        <p>Scope creep is affecting budget</p>
+                        <div class="timeline-status">Status: Nearing completion</div>
+                    </div>
+                    <div class="timeline-col modern">
+                        <div class="timeline-period">WEEKS 5-8</div>
+                        <p>50+ users are active daily</p>
+                        <p>Feature requests are prioritized</p>
+                        <p>Retention metrics guide decisions</p>
+                        <div class="timeline-status">Status: Optimizing for growth</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-row fade-in-item">
+                    <div class="timeline-col traditional">
+                        <div class="timeline-period">MONTH 6</div>
+                        <p>Beta launch (6+ months later)</p>
+                        <p>Crossing fingers for traction</p>
+                        <p>Now you can start learning</p>
+                        <div class="timeline-status">Status: Finally live</div>
+                    </div>
+                    <div class="timeline-col modern">
+                        <div class="timeline-period">MONTH 3</div>
+                        <p>Product-market fit validated</p>
+                        <p>Roadmap backed by real data</p>
+                        <p>You're already planning v2</p>
+                        <div class="timeline-status">Status: Scaling confidently</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-outcome">
+                    <div class="outcome-box traditional">
+                        <h4>THE OUTCOME</h4>
+                        <p><strong>Traditional:</strong> 6 months, uncertain market fit, late to market</p>
+                    </div>
+                    <div class="outcome-box modern">
+                        <h4>THE OUTCOME</h4>
+                        <p><strong>Modern:</strong> 6-8 weeks, validated with real users, competitive edge</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-cta">
+                <a href="#method" class="btn btn-primary">Build Smarter, Not Slower →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW I BUILD FAST -->
+    <section id="method" class="method">
+        <div class="container">
+            <div class="section-label">🛠 Real systems. Real speed. No shortcuts.</div>
+            <h2 class="section-title">How I Build Fast</h2>
+            
+            <div class="method-intro">
+                <p class="large-text">I don't code everything from scratch — I assemble what already scales.</p>
+                <p>Instead of reinventing the wheel, I combine trusted, production-ready tools to deliver fast, secure, and scalable products.</p>
+            </div>
+            
+            <div class="stack-grid">
+                <div class="stack-card fade-in-item">
+                    <div class="stack-icon">🏗️</div>
+                    <h3>FOUNDATION</h3>
+                    <p>Bubble, Xano, or Supabase on AWS and Cloudflare</p>
+                </div>
+                
+                <div class="stack-card fade-in-item">
+                    <div class="stack-icon">⚡</div>
+                    <h3>AUTOMATION</h3>
+                    <p>Make and Zapier for background workflows</p>
+                </div>
+                
+                <div class="stack-card fade-in-item">
+                    <div class="stack-icon">🤖</div>
+                    <h3>INTELLIGENCE</h3>
+                    <p>OpenAI and Claude for AI features</p>
+                </div>
+                
+                <div class="stack-card fade-in-item">
+                    <div class="stack-icon">💳</div>
+                    <h3>GROWTH</h3>
+                    <p>Stripe and PayPal for payments, analytics for insights</p>
+                </div>
+            </div>
+            
+            <div class="method-ownership">
+                <p class="highlight-box">You own everything we build — from code to credentials. When you're ready to scale or fundraise, everything transfers cleanly.</p>
+            </div>
+            
+            <div class="method-closing">
+                <p>Speed doesn't mean rushed; it means built on proven systems so you can focus on what matters.</p>
+            </div>
+            
+            <div class="method-cta">
+                <a href="#contact" class="btn btn-primary">Contact to Start Your Build →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROOF / CASE STUDIES -->
+    <section id="proof" class="proof">
+        <div class="container">
+            <div class="section-label">✅ Real Founders. Real Launches.</div>
+            <h2 class="section-title">Proof</h2>
+            
+            <div class="case-studies">
+                <div class="case-card fade-in-item">
+                    <div class="case-icon">🤖</div>
+                    <h3>AI Platform</h3>
+                    <p class="case-metric">250+ beta users in 3 weeks</p>
+                    <p class="case-status">Now generating revenue from beta users</p>
+                </div>
+                
+                <div class="case-card fade-in-item">
+                    <div class="case-icon">🏪</div>
+                    <h3>B2B Marketplace</h3>
+                    <p class="case-metric">First transactions live in week 3</p>
+                    <p class="case-status">40+ vendors on platform by month 2</p>
+                </div>
+                
+                <div class="case-card fade-in-item">
+                    <div class="case-icon">💰</div>
+                    <h3>FinTech Tool</h3>
+                    <p class="case-metric">Functional MVP built in 4 weeks</p>
+                    <p class="case-status">Now powering pilot with Series A startup</p>
+                </div>
+            </div>
+            
+            <div class="proof-closing">
+                <p>Each founder validated early and used real data to guide next steps.</p>
+            </div>
+            
+            <div class="proof-cta">
+                <a href="#contact" class="btn btn-secondary">View More Case Studies →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE BUILDER -->
+    <section id="builder" class="builder">
+        <div class="container">
+            <div class="builder-content">
+                <div class="builder-text">
+                    <h2 class="builder-title">
+                        I'm <span id="builderName">Nithin</span>.<br>
+                        <span class="highlight" id="builderTagline">I Ship Products, Not Promises.</span>
+                    </h2>
+                    
+                    <p class="builder-subtitle" id="builderRole">Ex-founder. Ex-CTO. Product builder focused on momentum.</p>
+                    
+                    <div class="builder-bio">
+                        <p>I've launched dozens of startup products — some scaled, some failed fast (both taught valuable lessons).</p>
+                        <p>Now I help founders avoid the slow cycle I once faced: months of planning, no validation, and launching too late.</p>
+                    </div>
+                    
+                    <div class="builder-story">
+                        <blockquote>
+                            "In 2020, I spent eight months building a custom platform. By launch, the market had moved on. Faster teams won with 'good-enough' products while I perfected features nobody needed. Now I help founders avoid that trap."
+                        </blockquote>
+                    </div>
+                    
+                    <div class="builder-why">
+                        <h3>Why Work With Me</h3>
+                        <ul>
+                            <li>I've been in your shoes — founder deadlines, investor pressure, and limited runway.</li>
+                            <li>Since 2019, I've used no-code to turn ideas into traction quickly and responsibly.</li>
+                            <li>I combine startup empathy with technical depth from my software-engineering roots.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="builder-availability">
+                        <p>I take on 3–4 builds per month so every founder gets my full attention — that's why my calendar books 6–8 weeks out. Quality over volume, every time.</p>
+                    </div>
+                    
+                    <div class="builder-philosophy">
+                        <p class="philosophy-text"><em>Move fast, learn early, and keep improving — that's how real products find their market.</em></p>
+                    </div>
+                </div>
+                
+                <div class="builder-image">
+                    <div class="avatar-placeholder">
+                        <span>👤</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-label">📬 Let's start building</div>
+            <h2 class="section-title">Ready to move fast without cutting corners?</h2>
+            <p class="section-subtitle">Let's talk about your idea and outline a clear, realistic launch plan.</p>
+            
+            <div class="contact-form-wrapper">
+                <div class="form-card">
+                    <div class="form-window-chrome">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="form-title">New message</span>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email address"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Enter your name"
+                                required
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="Enter the subject of your message"
+                                required
+                            >
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6"
+                                placeholder="Enter your message..."
+                                required
+                            ></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">Send →</button>
+                        </div>
+                        
+                        <div class="form-success" id="formSuccess">
+                            ✓ Got it! I'll reply within 24 hours.
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-alternative">
+                    <p>or email <a href="mailto:hello@example.com" id="contactEmail">hello@example.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo" id="footerLogo">[nithin]</div>
+                    <p class="footer-tagline">Building products that ship fast and learn faster.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#method">Method</a></li>
+                            <li><a href="#proof">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>social</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" id="footerLinkedIn">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" id="footerTwitter">X</a></li>
+                            <li><a href="https://github.com/yourhandle" target="_blank" rel="noopener noreferrer" id="footerGithub">GitHub</a></li>
+                            <li><a href="mailto:hello@example.com" id="footerEmail">Mail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-quote">
+                <p>"While you're reading this, someone else just started building."</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p id="footerCopyright">&copy; 2025 | Built in days using my own method | Helping founders launch faster worldwide</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
