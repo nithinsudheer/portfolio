@@ -609,9 +609,9 @@ function throttle(func, limit) {
     };
 }
 
-/* ======================================
+/* =====================================
    PERFORMANCE OPTIMIZATION
-   ====================================== */
+   ===================================== */
 
 // Optimize scroll events with throttle
 const optimizedScroll = throttle(() => {
