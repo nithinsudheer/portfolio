@@ -204,15 +204,18 @@
 
 /* Cost of Waiting Section Dark Mode */
 [data-theme="dark"] .waiting-content > p {
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 [data-theme="dark"] .waiting-list li {
     color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-[data-theme="dark"] .waiting-list li::before {
-    color: var(--text-accent);
+[data-theme="dark"] .waiting-list li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 [data-theme="dark"] .bottom-line {
@@ -220,7 +223,7 @@
 }
 
 [data-theme="dark"] .bottom-line p {
-    color: var(--text-primary);
+    color: var(--text-accent);
 }
 
 /* Timeline Section Dark Mode */
