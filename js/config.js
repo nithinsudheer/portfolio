@@ -23,7 +23,7 @@ const portfolioConfig = {
     
     // Brand
     brand: {
-        logo: "[Nithin Sudheer]", // Text logo in brackets
+        logo: "Nithin Sudheer", // Text logo in brackets
         companyName: "" // Leave empty if no company name
     },
     
