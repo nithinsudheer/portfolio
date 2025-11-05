@@ -1202,17 +1202,6 @@ section {
     color: var(--text-accent);
 }
 
-.footer-quote {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    margin: var(--spacing-2xl) 0;
-    padding: var(--spacing-xl) 0;
-    border-top: 1px solid var(--card-border);
-    border-bottom: 1px solid var(--card-border);
-    color: var(--text-primary);
-}
-
 .footer-bottom {
     text-align: center;
     font-size: 13px;
