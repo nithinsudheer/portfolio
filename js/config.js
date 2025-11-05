@@ -30,7 +30,7 @@ const portfolioConfig = {
     // Typewriter phrases (UPDATED - shorter phrases to prevent line breaking)
     typewriter: {
         phrases: [
-            'in Weeks, Not Months.',
+            'In Weeks, Not Months.',
             'Before Your Competition.',
             'With Real Users.'
         ],

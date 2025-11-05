@@ -1,5 +1,5 @@
 /* ========================================
-   WARTIN LABS PORTFOLIO - MAIN JAVASCRIPT
+   Nithin PORTFOLIO - MAIN JAVASCRIPT
    ======================================== */
 
 'use strict';
@@ -20,9 +20,6 @@ class ThemeManager {
     }
     
     init() {
-        // Update icon to match current theme (don't call setTheme again, just update icon)
-        this.updateIcon();
-        
         // Add event listener
         if (this.themeToggle) {
             this.themeToggle.addEventListener('click', () => this.toggleTheme());
@@ -36,19 +33,10 @@ class ThemeManager {
         });
     }
     
-    updateIcon() {
-        // Update toggle icon - moon for light mode, sun for dark mode
-        const icon = document.querySelector('.theme-icon');
-        if (icon) {
-            icon.textContent = this.currentTheme === 'dark' ? '☀' : '☾';
-        }
-    }
-    
     setTheme(theme) {
         this.currentTheme = theme;
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-        this.updateIcon();
     }
     
     toggleTheme() {
