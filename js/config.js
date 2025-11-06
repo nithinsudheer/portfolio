@@ -16,9 +16,7 @@ const portfolioConfig = {
     
     // Social Media Links
     social: {
-        linkedin: "https://linkedin.com/in/yourprofile",
-        twitter: "https://twitter.com/yourhandle",
-        github: "https://github.com/yourhandle"
+        linkedin: "https://linkedin.com/in/nithinsudheer",
     },
     
     // Brand
