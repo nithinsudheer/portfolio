@@ -202,27 +202,44 @@
     box-shadow: var(--card-shadow);
 }
 
-/* Cost of Waiting Section Dark Mode */
-[data-theme="dark"] .waiting-content > p {
-    color: var(--text-secondary);
-}
+/* ========================================
+   UNIFIED CARD SYSTEM - DARK MODE
+   ======================================== */
 
-[data-theme="dark"] .waiting-list li {
+[data-theme="dark"] .card,
+[data-theme="dark"] .waiting-list li,
+[data-theme="dark"] .stack-card,
+[data-theme="dark"] .case-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
 }
 
-[data-theme="dark"] .waiting-list li:hover {
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .waiting-list li:hover,
+[data-theme="dark"] .stack-card:hover,
+[data-theme="dark"] .case-card:hover {
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
-[data-theme="dark"] .card-heading {
+[data-theme="dark"] .card-heading,
+[data-theme="dark"] .stack-card h3,
+[data-theme="dark"] .case-card h3 {
     color: var(--text-accent);
 }
 
-[data-theme="dark"] .card-description {
+[data-theme="dark"] .card-description,
+[data-theme="dark"] .stack-card p {
     color: var(--text-primary);
+}
+
+[data-theme="dark"] .stack-card p {
+    color: var(--text-secondary);
+}
+
+/* Cost of Waiting Section Dark Mode */
+[data-theme="dark"] .waiting-content > p {
+    color: var(--text-secondary);
 }
 
 
@@ -288,18 +305,7 @@
     color: var(--text-primary);
 }
 
-[data-theme="dark"] .stack-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-}
-
-[data-theme="dark"] .stack-card:hover {
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
-}
-
-[data-theme="dark"] .stack-card p {
-    color: var(--text-secondary);
-}
+/* Stack and case cards use unified dark mode styles above */
 
 [data-theme="dark"] .highlight-box {
     background: linear-gradient(135deg, rgba(26, 22, 37, 0.8), rgba(26, 37, 48, 0.8));
@@ -312,14 +318,8 @@
 }
 
 /* Proof / Case Studies Dark Mode */
-[data-theme="dark"] .case-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-}
+/* Case cards use unified dark mode styles above */
 
-[data-theme="dark"] .case-card:hover {
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
-}
 
 [data-theme="dark"] .case-metric {
     color: var(--text-accent);

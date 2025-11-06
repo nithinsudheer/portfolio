@@ -121,23 +121,17 @@
                     
                     <ul class="waiting-list">
                         <li class="fade-in-item card-item">
-                            <div class="card-icon">
-                                <img src="images/wasted-time.svg" alt="Wasted Time" class="card-icon-img">
-                            </div>
+                            <div class="card-icon" style="background-image: url('/images/about-target.svg');"></div>
                             <h3 class="card-heading">Wasted Time</h3>
                             <p class="card-description">Months spent planning while your market moves on without you.</p>
                         </li>
                         <li class="fade-in-item card-item">
-                            <div class="card-icon">
-                                <img src="images/missed-learning.svg" alt="Missed Learning" class="card-icon-img">
-                            </div>
+                            <div class="card-icon" style="background-image: url('/images/about-chart.svg');"></div>
                             <h3 class="card-heading">Missed Learning</h3>
                             <p class="card-description">Zero real user feedback means building what nobody wants.</p>
                         </li>
                         <li class="fade-in-item card-item">
-                            <div class="card-icon">
-                                <img src="images/lost-opportunity.svg" alt="Lost Opportunity" class="card-icon-img">
-                            </div>
+                            <div class="card-icon" style="background-image: url('/images/about-rocket.svg');"></div>
                             <h3 class="card-heading">Lost Opportunity</h3>
                             <p class="card-description">A live product with 10 users beats a perfect deck with zero customers</p>
                         </li>
@@ -296,33 +290,25 @@
             
             <div class="stack-grid">
                 <div class="stack-card fade-in-item">
-                    <div class="stack-icon">
-                        <img src="images/foundation-icon.svg" alt="Foundation" class="card-icon-img">
-                    </div>
+                    <div class="stack-icon">🏗️</div>
                     <h3>FOUNDATION</h3>
                     <p>Built on Bubble with Xano or Supabase.</p>
                 </div>
 
                 <div class="stack-card fade-in-item">
-                    <div class="stack-icon">
-                        <img src="images/automation-icon.svg" alt="Automation" class="card-icon-img">
-                    </div>
+                    <div class="stack-icon">⚡</div>
                     <h3>AUTOMATION</h3>
                     <p>Workflows run through Make or Zapier.</p>
                 </div>
 
                 <div class="stack-card fade-in-item">
-                    <div class="stack-icon">
-                        <img src="images/intelligence-icon.svg" alt="Intelligence" class="card-icon-img">
-                    </div>
+                    <div class="stack-icon">🤖</div>
                     <h3>INTELLIGENCE</h3>
                     <p>AI features powered by OpenAI or Claude.</p>
                 </div>
 
                 <div class="stack-card fade-in-item">
-                    <div class="stack-icon">
-                        <img src="images/growth-icon.svg" alt="Growth" class="card-icon-img">
-                    </div>
+                    <div class="stack-icon">💳</div>
                     <h3>GROWTH</h3>
                     <p>Payments handled with Stripe or Razorpay.</p>
                 </div>
@@ -350,27 +336,21 @@
             
             <div class="case-studies">
                 <div class="case-card fade-in-item">
-                    <div class="case-icon">
-                        <img src="images/ai-platform-icon.svg" alt="AI Platform" class="card-icon-img">
-                    </div>
+                    <div class="case-icon">🤖</div>
                     <h3>AI Platform</h3>
                     <p class="case-metric">250+ beta users in 3 weeks</p>
                     <p class="case-status">Now generating revenue from beta users</p>
                 </div>
                 
                 <div class="case-card fade-in-item">
-                    <div class="case-icon">
-                        <img src="images/marketplace-icon.svg" alt="B2B Marketplace" class="card-icon-img">
-                    </div>
+                    <div class="case-icon">🏪</div>
                     <h3>B2B Marketplace</h3>
                     <p class="case-metric">First transactions live in week 3</p>
                     <p class="case-status">40+ vendors on platform by month 2</p>
                 </div>
                 
                 <div class="case-card fade-in-item">
-                    <div class="case-icon">
-                        <img src="images/fintech-icon.svg" alt="FinTech Tool" class="card-icon-img">
-                    </div>
+                    <div class="case-icon">💰</div>
                     <h3>FinTech Tool</h3>
                     <p class="case-metric">Functional MVP built in 4 weeks</p>
                     <p class="case-status">Now powering pilot with Series A startup</p>

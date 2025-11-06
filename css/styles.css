@@ -559,18 +559,15 @@ section {
     line-height: 1.6;
 }
 
-/* Waiting List Cards - Unified Card Style */
-.waiting-list {
-    list-style: none;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-xl);
-    padding: 0;
-    margin-top: var(--spacing-xl);
-}
+/* ========================================
+   UNIFIED CARD SYSTEM
+   All cards use same base styles for consistency
+   ======================================== */
 
-.waiting-list li {
+.card,
+.waiting-list li,
+.stack-card,
+.case-card {
     padding: var(--spacing-xl);
     background: var(--card-bg);
     backdrop-filter: blur(24px);
@@ -585,35 +582,85 @@ section {
     transition: all 0.3s ease;
 }
 
-.waiting-list li:hover {
+.card:hover,
+.waiting-list li:hover,
+.stack-card:hover,
+.case-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
-/* Card Icon - Images now in HTML */
-.card-icon {
+/* Card Icon/Emoji - Unified styling */
+.card-icon,
+.stack-icon,
+.case-icon {
     width: 64px;
     height: 64px;
     margin-bottom: var(--spacing-md);
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Background image support for SVG icons */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* Card Heading */
-.card-heading {
-    font-size: 20px;
+/* Image inside card-icon */
+.card-icon-img,
+.stack-icon img,
+.case-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Card Heading - Unified styling */
+.card-heading,
+.stack-card h3,
+.case-card h3 {
+    font-size: 14px;
     font-weight: 700;
+    letter-spacing: 0.08em;
     margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
     color: var(--text-accent);
 }
 
-/* Card Description */
-.card-description {
+.case-card h3 {
+    font-size: 19px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* Card Description - Unified styling */
+.card-description,
+.stack-card p {
     font-size: 15px;
     line-height: 1.6;
     color: var(--text-primary);
     margin: 0;
+}
+
+.stack-card p {
+    color: var(--text-secondary);
+}
+
+/* ========================================
+   COST OF WAITING SECTION (REALITY)
+   ======================================== */
+
+/* Waiting List Cards - Uses unified card styles above */
+.waiting-list {
+    list-style: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    padding: 0;
+    margin-top: var(--spacing-xl);
 }
 
 
@@ -757,40 +804,7 @@ section {
     margin: 0 auto var(--spacing-2xl);
 }
 
-.stack-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
-    text-align: center;
-    transition: all var(--transition-normal);
-}
-
-.stack-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
-}
-
-.stack-icon {
-    font-size: 42px;
-    margin-bottom: var(--spacing-md);
-}
-
-.stack-card h3 {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    margin-bottom: var(--spacing-sm);
-    text-transform: uppercase;
-}
-
-.stack-card p {
-    font-size: 15px;
-    color: var(--text-secondary);
-    line-height: 1.5;
-}
+/* Stack cards use unified card styles defined above */
 
 .method-ownership {
     max-width: 800px;
@@ -831,32 +845,7 @@ section {
     margin: var(--spacing-2xl) 0;
 }
 
-.case-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
-    text-align: center;
-    transition: all var(--transition-normal);
-}
-
-.case-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
-}
-
-.case-icon {
-    font-size: 42px;
-    margin-bottom: var(--spacing-md);
-}
-
-.case-card h3 {
-    font-size: 19px;
-    margin-bottom: var(--spacing-sm);
-    font-weight: 600;
-}
+/* Case cards use unified card styles defined above */
 
 .case-metric {
     font-size: 15px;
