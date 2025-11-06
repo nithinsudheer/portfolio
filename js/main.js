@@ -394,24 +394,18 @@ class ContactForm {
     }
     
     submitForm(data) {
-        // TODO: Replace with actual form submission endpoint
-        // Example with fetch API:
-        /*
-        return fetch('YOUR_FORM_ENDPOINT', {
+        // Just submit the form naturally to Web3Forms
+        return fetch(this.form.action, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-        */
-        
-        // Simulated submission for now
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                console.log('Form data:', data);
-                resolve();
-            }, 1500);
+            body: new FormData(this.form)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                return data;
+            } else {
+                throw new Error(data.message || 'Form submission failed');
+            }
         });
     }
 }

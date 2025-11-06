@@ -449,7 +449,9 @@
                         <span class="form-title">New message</span>
                     </div>
                     
-                    <form id="contactForm" class="contact-form" novalidate>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form" novalidate>
+                        <input type="hidden" name="access_key" value="c0d676f7-b58c-49ad-948b-76d6fd28912c">
+                        
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input 
