@@ -36,10 +36,10 @@
 
 /* Navigation in Dark Mode - IMPROVED */
 [data-theme="dark"] .navbar {
-    background: rgba(26, 22, 37, 0.85);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: none;
 }
 
 [data-theme="dark"] .nav-logo a {
@@ -51,8 +51,8 @@
 }
 
 [data-theme="dark"] .nav-menu {
-    background: rgba(26, 22, 37, 0.95);
-    border-bottom: 1px solid var(--card-border);
+    background: transparent;
+    border-bottom: none;
 }
 
 [data-theme="dark"] .nav-link:hover,
@@ -60,7 +60,9 @@
     color: var(--text-accent);
 }
 
-[data-theme="dark"] .nav-link.active::after {
+[data-theme="dark"] .nav-link::after,
+[data-theme="dark"] .nav-link.active::after,
+[data-theme="dark"] .nav-link:hover::after {
     background: var(--text-accent);
 }
 
@@ -95,12 +97,6 @@
 
 [data-theme="dark"] .mobile-menu-toggle {
     color: var(--text-accent);
-}
-
-/* Mobile menu dark mode */
-[data-theme="dark"] .nav-menu {
-    background: rgba(26, 22, 37, 0.98);
-    border-bottom: 1px solid var(--card-border);
 }
 
 /* Buttons in Dark Mode */
@@ -548,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     [data-theme="dark"] .nav-menu {
-        background: rgba(26, 22, 37, 0.98);
+        background: transparent;
     }
     
     [data-theme="dark"] .timeline-col.modern {
@@ -562,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
     [data-theme="dark"] .navbar {
-        background: rgba(26, 22, 37, 0.9);
+        background: transparent;
     }
 }
 
@@ -586,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     [data-theme="dark"] .navbar {
-        background: rgba(26, 22, 37, 0.95);
+        background: transparent;
     }
 }
 
