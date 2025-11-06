@@ -559,24 +559,25 @@ section {
     line-height: 1.6;
 }
 
+/* Waiting List Cards - Unified Card Style */
 .waiting-list {
     list-style: none;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    padding: 0;
+    margin-top: var(--spacing-xl);
 }
 
 .waiting-list li {
-    font-size: 17px;
-    line-height: 1.6;
     padding: var(--spacing-xl);
-    color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: var(--card-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -586,27 +587,33 @@ section {
 
 .waiting-list li:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
-.waiting-list li::before {
-    content: '';
+/* Card Icon - Images now in HTML */
+.card-icon {
     width: 64px;
     height: 64px;
     margin-bottom: var(--spacing-md);
-    display: block;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/images/about-target.svg'); /* Replace with your image path */
 }
 
-.waiting-list li:nth-child(2)::before {
-    background-image: url('/images/about-chart.svg'); /* Replace with your image path */
+/* Card Heading */
+.card-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-accent);
 }
 
-.waiting-list li:nth-child(3)::before {
-    background-image: url('/images/about-rocket.svg'); /* Replace with your image path */
+/* Card Description */
+.card-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0;
 }
 
 

@@ -208,15 +208,23 @@
 }
 
 [data-theme="dark"] .waiting-list li {
-    color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
 }
 
 [data-theme="dark"] .waiting-list li:hover {
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
+
+[data-theme="dark"] .card-heading {
+    color: var(--text-accent);
+}
+
+[data-theme="dark"] .card-description {
+    color: var(--text-primary);
+}
+
 
 [data-theme="dark"] .bottom-line {
     border-top: 1px solid var(--card-border);
